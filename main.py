@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import pandas as pd
 from movie_recommender import MovieRecommender
-
 app = Flask(__name__)
 
 # Load movie data

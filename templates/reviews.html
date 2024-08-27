@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Tamil Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#" class="active">Reviews</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Reviews</h1>
+            <h2>Read what others have to say about Tamil movies!</h2>
+        </section>
+        <section class="blog-posts">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post-container">
+                {% for post in posts %}
+                    <div class="blog-post">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.content }}</p>
+                        <p>Posted by {{ post.author }} on {{ post.date }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Get the latest movie reviews and news delivered straight to your inbox!</p>
+            <form>
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tamil Movie Recommender</p>
+    </footer>
+</body>
+</html>

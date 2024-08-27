@@ -1,0 +1,302 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Main Header */
+h1 {
+    color: #4A90E2;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f4f4f4;
+    transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #4A90E2;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+/* Recommended Movies List */
+h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #4A90E2;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4A90E2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+li:hover {
+    background-color: #f4f4f4;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+}
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A90E2;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #111111;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.blog-post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter {
+    background-color: #4A90E2;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #357ABD;
+    color: #fff;
+    cursor: pointer;
+}
+/* Add this to the end of your styles.css file */
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-info li:last-child {
+    border-bottom: none;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #357ABD;
+    color: #fff;
+    cursor: pointer;
+}
